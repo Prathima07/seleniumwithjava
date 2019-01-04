@@ -14,7 +14,7 @@ public class CompareString {
 
 		System.setProperty("webdriver.chrome.driver", "..//seleniumwithjava//Driver//chromedriver");
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://learn.letskodeit.com/p/practice");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -23,7 +23,7 @@ public class CompareString {
 		Select sel = new Select(element);
 		sel.selectByIndex(1);
 		String h = sel.toString();
-	
+
 		System.out.println(h);
 
 		driver.quit();
